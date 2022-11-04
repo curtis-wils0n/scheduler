@@ -102,6 +102,8 @@ $appointment-height: 11rem;
     }
   }
 
+  //TODO: determine whether this is necessary (it hides last appointment)
+  // 
   // &:last-of-type &__add,
   // &:last-of-type &__card {
   //   display: none;
