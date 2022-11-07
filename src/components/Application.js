@@ -40,8 +40,8 @@ export default function Application(props) {
       [id]: appointment,
     };
 
-    setState({ ...state, appointments });
-    console.log("ID:", id, "Interview:", interview);
+    return axios.put(`http://localhost:8001/api/appointments/${id}`, appointment)
+      .then(setState({ ...state, appointments }))
   }
 
   const schedule = appointments.map((appointment) => {
