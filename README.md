@@ -1,23 +1,24 @@
 # Interview Scheduler
 
-## Setup
+Created by [Curtis Wilson](https://github.com/curtis-wils0n) as part of Lighthouse Labs' full-time web development bootcamp.
 
-Install dependencies with `npm install`.
+## Summary
 
-## Running Webpack Development Server
+**Interview Scheduler** is a single-page web app that allows a user to book an appointment with a specified interviewer. The app offers interview times between 12pm and 4pm, Monday through Friday, and allows users to edit and delete scheduled appointments.
 
-```sh
-npm start
-```
+## Screenshots
 
-## Running Jest Test Framework
+![An image of the main schedule-view of Interview Scheduler.]()
 
-```sh
-npm test
-```
+![An image of an interview being editted.]()
 
-## Running Storybook Visual Testbed
+![An image of a delete confirmation screen for deleting an interview.]()
 
-```sh
-npm run storybook
-```
+## Setting Up
+
+1. Clone this repository onto your local device.
+2. Install dependencies with `npm install`.
+3. Repeat steps 1 and 2 with the [scheduler-api](https://github.com/curtis-wils0n/scheduler-api) repository.
+4. Run `npm start` from the terminal while in the **scheduler-api** project.
+5. Run `npm start` from the terminal while in the **scheduler** project.
+6. A React window should open in your default browser.
