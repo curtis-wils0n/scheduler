@@ -8,7 +8,8 @@ export default function useApplicationData() {
     appointments: {},
     interviewers: {},
   });
-
+  
+  // Map days to list index
   const dayCode = {
     "Monday": 0,
     "Tuesday": 1,
@@ -54,7 +55,7 @@ export default function useApplicationData() {
     }
     state.days[dayIndex] = day;
 
-    return axios.put(`http://localhost:8001/api/appointments/${id}`, appointment)
+    return axios.put(`/api/appointments/${id}`, appointment)
       .then(() => {
         setState({ ...state, appointments, ...state.days })
       });
@@ -70,7 +71,7 @@ export default function useApplicationData() {
 
     state.days[dayIndex] = day;
 
-    return axios.delete(`http://localhost:8001/api/appointments/${id}`)
+    return axios.delete(`/api/appointments/${id}`)
       .then(() => {
         setState({...state, ...state.days });
       })

@@ -7,8 +7,8 @@ import DayList from "./DayList";
 import { getAppointmentsForDay, getInterview, getInterviewersForDay } from "helpers/selectors";
 import useApplicationData from "hooks/useApplicationData";
 
-export default function Application(props) {
-
+export default function Application() {
+  //Import hook functions
   const {
     state,
     setDay,

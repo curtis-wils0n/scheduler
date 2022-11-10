@@ -25,7 +25,7 @@ export default function InterviewerList(props) {
     </section>
   );
 }
-
+// Necessitate that InterviewerList is of type Array
 InterviewerList.propTypes = {
   interviewers: PropTypes.array.isRequired
 };
