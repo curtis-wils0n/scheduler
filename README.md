@@ -8,11 +8,11 @@ Created by [Curtis Wilson](https://github.com/curtis-wils0n) as part of Lighthou
 
 ## Screenshots
 
-![An image of the main schedule-view of Interview Scheduler.]()
+![An image of the main schedule-view of Interview Scheduler.](https://github.com/curtis-wils0n/scheduler/blob/main/docs/main-page.png?raw=true)
 
-![An image of an interview being editted.]()
+![An image of an interview being editted.](https://github.com/curtis-wils0n/scheduler/blob/main/docs/edit.png?raw=true)
 
-![An image of a delete confirmation screen for deleting an interview.]()
+![An image of a delete confirmation screen for deleting an interview.](https://github.com/curtis-wils0n/scheduler/blob/main/docs/delete.png?raw=true)
 
 ## Setting Up
 
