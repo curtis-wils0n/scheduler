@@ -37,7 +37,6 @@ export default function Appointment(props) {
         transition(SHOW);
       })
       .catch((error) => {
-        console.error(error);
         transition(ERROR_SAVE, true);
       })
   }
@@ -49,7 +48,6 @@ export default function Appointment(props) {
         transition(EMPTY);
       })
       .catch((error) => {
-        console.error(error);
         transition(ERROR_DELETE, true);
       })
   }
