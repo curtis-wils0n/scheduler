@@ -51,7 +51,10 @@ export default function useApplicationData() {
     const dayIndex = dayCode[state.day];
     const day = {
       ...state.days[dayIndex],
-      spots: state.days[dayIndex].spots - 1
+      spots: state.days[dayIndex].spots
+    }
+    if (!state.appointments[id].interview) {
+      day.spots = state.days[dayIndex].spots - 1;
     }
     state.days[dayIndex] = day;
     // Place new appointment in data
