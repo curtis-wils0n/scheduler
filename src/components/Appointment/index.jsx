@@ -103,7 +103,7 @@ export default function Appointment(props) {
       {mode === ERROR_SAVE && (
         <Error 
           message="Appointment could not be saved."
-          onClose={() => transition(EMPTY)}
+          onClose={() => transition(back)}
         />
       )}
       {mode === ERROR_DELETE && (
