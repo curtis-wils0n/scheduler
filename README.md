@@ -14,6 +14,15 @@ Created by [Curtis Wilson](https://github.com/curtis-wils0n) as part of Lighthou
 
 ![An image of a delete confirmation screen for deleting an interview.](https://github.com/curtis-wils0n/scheduler/blob/main/docs/delete.png?raw=true)
 
+## Dependencies
+
+- **Axios** 1.1.3
+- **classnames** 2.2.6
+- **normalize** 8.0.1
+- **React** 16.9.0
+- **React-DOM** 16.9.0
+- **React-Scripts** 3.4.4
+
 ## Setting Up
 
 1. Clone this repository onto your local device.
