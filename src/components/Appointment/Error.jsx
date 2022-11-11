@@ -1,5 +1,10 @@
 import React from "react";
-
+/**
+ * Component to display a relevant error to the user
+ * 
+ * @param {*} props 
+ * @returns JSX Element
+ */
 export default function Error(props) {
   return (
     <main className="appointment__card appointment__card--error">

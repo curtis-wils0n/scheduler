@@ -2,9 +2,14 @@ import React from "react";
 import classNames from "classnames";
 
 import "components/DayListItem.scss";
-
+/**
+ * Component to represent an individual day item (limited to weekdays) 
+ * 
+ * @param {*} props 
+ * @returns JSX Element
+ */
 export default function DayListItem(props) {
-  
+  // Returns an appropriately-formatted string based on spots remaining.
   function formatSpots(spots) {
     if (spots === 1) return "1 spot remaining";
     if (spots === 0) return "no spots remaining";

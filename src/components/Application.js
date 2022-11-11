@@ -6,7 +6,11 @@ import DayList from "./DayList";
 
 import { getAppointmentsForDay, getInterview, getInterviewersForDay } from "helpers/selectors";
 import useApplicationData from "hooks/useApplicationData";
-
+/**
+ * Core display component for scheduler
+ * 
+ * @returns JSX Element
+ */
 export default function Application() {
   //Import hook functions
   const {
@@ -17,7 +21,7 @@ export default function Application() {
   } = useApplicationData();
 
   const interviewers = getInterviewersForDay(state, state.day);
-
+  // Create a list of appointments for specified day
   const appointments = getAppointmentsForDay(state, state.day).map(
     appointment => {
       return (

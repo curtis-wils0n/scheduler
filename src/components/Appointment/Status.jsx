@@ -1,5 +1,10 @@
 import React from "react";
-
+/**
+ * Component to display a loading animation alongside a relevant message.
+ * 
+ * @param {*} props 
+ * @returns JSX Element
+ */
 export default function Status(props) {
   return (
     <main className="appointment__card appointment__card--status">

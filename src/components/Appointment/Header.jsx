@@ -1,5 +1,10 @@
 import React from "react";
-
+/**
+ * Component to display timestamp and delimiting ruler
+ * 
+ * @param {*} props 
+ * @returns JSX Element
+ */
 export default function Header(props) {
   return (
     <header className="appointment__time">

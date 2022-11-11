@@ -1,5 +1,10 @@
 import React from "react";
-
+/**
+ * Component to display an already-made appointment
+ * 
+ * @param {*} props 
+ * @returns JSX Element
+ */
 export default function Show (props) {
   return (
     <main className="appointment__card appointment__card--show">

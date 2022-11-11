@@ -2,8 +2,14 @@ import React from "react";
 import classNames from "classnames";
 
 import "components/Button.scss";
-
+/**
+ * Component to display buttons used in app
+ * 
+ * @param {*} props 
+ * @returns JSX Element
+ */
 export default function Button(props) {
+  // Buttons will be in one of two classes
   const buttonClass = {
     'button--confirm': props.confirm,
     'button--danger': props.danger, 

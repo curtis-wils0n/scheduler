@@ -3,9 +3,16 @@ import InterviewerListItem from "./InterviewerListItem";
 import PropTypes from 'prop-types'
 
 import "components/InterviewerList.scss";
-
+/**
+ * Component to display a collection of interviewers, displayed when a user
+ *  creates or edits an <Appointment/> component.
+ * 
+ * @param {*} props 
+ * @returns JSX Element
+ */
 export default function InterviewerList(props) {
   const interviewerList = props.interviewers;
+  // Creates an interviewer component for each interviewer listed in data
   const renderedInterviewerList = interviewerList.map((interviewer) =>
     <InterviewerListItem
       key={interviewer.id}

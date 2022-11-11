@@ -2,13 +2,20 @@ import Button from "components/Button";
 import InterviewerList from "components/InterviewerList";
 
 import React, { useState } from "react";
-
+/**
+ * Component to display a form in which the user can book an interview.
+ * 
+ * @param {*} props 
+ * @returns JSX Element
+ */
 export default function Form(props) {
   const [student, setStudent] = useState(props.student || "");
   const [interviewer, setInterviewer] = useState(props.interviewer || null);
+  // Setter for relevant error message before being passed to <Error/> component
   const [error, setError] = useState("");
   
   function reset() {
+    // Reverts form values to original state
     setStudent("");
     setInterviewer(null);
   }

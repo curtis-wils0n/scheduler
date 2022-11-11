@@ -20,26 +20,32 @@ const CONFIRM = "CONFIRM";
 const EDIT = "EDIT";
 const ERROR_SAVE = "ERROR_SAVE";
 const ERROR_DELETE = "ERROR_DELETE"
-
+/**
+ * Component to act as core display for all other elements in /Appointment
+ * 
+ * @param {*} props 
+ * @returns JSX Element
+ */
 export default function Appointment(props) {
-
   const { mode, transition, back } = useVisualMode(props.interview ? SHOW : EMPTY);
-
+  // Create new appointment
   function save(name, interviewer) {
     const interview = {
       student: name,
       interviewer,
     };
+    // Display saving animation
     transition(SAVING);
     props.bookInterview(props.id, interview)
       .then(() => {
         transition(SHOW);
       })
       .catch((error) => {
+        console.error(error);
         transition(ERROR_SAVE, true);
       })
   }
-
+  // Delete specified appointment
   function destroy() {
     transition(DELETING, true);
     props.cancelInterview(props.id)
@@ -47,6 +53,7 @@ export default function Appointment(props) {
         transition(EMPTY);
       })
       .catch((error) => {
+        console.error(error);
         transition(ERROR_DELETE, true);
       })
   }
